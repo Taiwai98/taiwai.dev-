@@ -10,7 +10,12 @@
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
-    
+    <div class="transition">
+        <div class="cover cover1"></div>
+        <div class="cover cover2"></div>
+        <div class="cover cover3"></div>
+
+    </div>
         <nav class="navbar">
         <div class="navbar__container">
             <a href="/" id="navbar__logo">taiwai.dev</a>
@@ -56,6 +61,17 @@
                 </div>
                <br>
             </div>
+            <script>
+                const link = document.querySelector(".button");
+                const transition = document.querySelector(".transition");
+                link.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    transition.classList.add("slide");
+                    setTimeout(() => {
+                        window.location = link.href;
+                    }, 900);
+                });
+            </script>
    <script src="app.js"></script>
   </body>
 </html>
