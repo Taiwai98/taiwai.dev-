@@ -188,6 +188,9 @@ span{
 #desc10{
     margin-top: 30px;
 }
+#pace{
+    color: #ff79c6;
+}
 
 * {
     box-sizing: border-box;
