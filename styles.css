@@ -191,7 +191,12 @@ span{
 #pace{
     color: #ff79c6;
 }
-
+#paceApp{
+    color: #ff5555;
+}
+#firebase{
+    color: #8be9fd;
+}
 * {
     box-sizing: border-box;
     margin: 0;
