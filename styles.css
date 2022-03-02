@@ -300,6 +300,8 @@ html, body {
     cursor: pointer;
     text-decoration: none;
     font-size: 1.7rem;
+    margin-left: -275px;
+    margin-top: -20px;
 }
 
 .fa-gem {
