@@ -104,11 +104,11 @@ html, body {
 }
 .loginP{
     position: absolute;
-    left: 50px;
+    left: 65px;
 }
 .register{
     position: absolute;
-    right: 50px;
+    right: 65px;
 }
 
 /* Splash screen */
@@ -154,35 +154,16 @@ html, body {
     margin-left: -550px;
     margin-top: -450px;
 }
-@media screen and (max-width: 411px){
-.body{
-    width: 350px;
-    height:200px;
-    box-sizing: border-box;
-    }
-.space-ship{
-    margin-top: -30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
-    height: auto;
+#welcome-text{
+    text-align: center;
+    margin-top: 350px;
+    z-index: 1;
+    color: #ffffff;
+    font-size: xx-small;
 }
-.loginP img{
-    height: auto;
-    width: 200px;
-    left: 50px;
-    }
-.register img{
-    height: auto;
-    width: 200px;
-    right: 50px;
-    }
-.git{
-    margin-bottom: 10px;
-    margin-top: 30px;
-    }
+#paceDesc{
+    padding-bottom: 500px;
 }
-
 #projects{
     margin-top: 50px ;
     color: #ff79c6;
@@ -316,6 +297,7 @@ html, body {
 #wai{
     color: #6272a4;
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -436,8 +418,54 @@ img{
   margin-left: auto;
   margin-right: auto;
 }
-
-
+/*media screen for mobile view only */
+@media screen and (max-width: 411px){
+    .body{
+        width: 350px;
+        height:200px;
+        box-sizing: border-box;
+        }
+    .center{
+        height: 30px;
+        width: 30px;
+        }
+    .space-ship{
+        margin-top: -30px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        height: auto;
+    }
+    .loginP img{
+        height: auto;
+        width: 200px;
+        left: 50px;
+        }
+    .register img{
+        height: auto;
+        width: 200px;
+        right: 50px;
+        }
+    .git{
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+    #welcome-text{
+        text-align: center;
+        margin-top: 200px;
+        z-index: 1;
+        font-size: xx-small;
+    }
+    }
+    .loginP{
+        position: absolute;
+        left: 50px;
+    }
+    .register{
+        position: absolute;
+        right: 50px;
+    }
+    /*media screen for small browser */
 @media screen and (max-width: 960px) {
     .navbar__container {
         display: flex;
@@ -481,7 +509,10 @@ img{
     #navbar__logo {
         padding-left: 25px;
     }
-
+    #welcome-text{
+        text-align: center;
+        z-index: 1;
+    }
     .navbar__toggle .bar {
         width: 25px;
         height: 3px;
